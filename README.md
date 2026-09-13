@@ -1,32 +1,36 @@
-# NFC Digital Business Card
+# NFC Client Cards
 
-A minimal, mobile-first static page for an NFC digital business card. It is
-ready to deploy for free with GitHub Pages.
+A mobile-first collection of NFC digital business cards, hosted from one GitHub repository.
 
-## Files
+## Current card
 
-- `index.html` — page structure and placeholder contact links
-- `style.css` — responsive mobile-first styling
-- `assets/` — add a profile photo or logo here later
+- **INNOPRINT — Stationery & Print**
+- WhatsApp, Google Maps reviews, and Instagram links are wired into the contact buttons.
+- The repository root opens the INNOPRINT card.
 
-## Personalize later
+## Adding the next client
 
-Replace the placeholders in `index.html` with:
+Keep the INNOPRINT card at the root. Add every new client in its own folder:
 
-- Name and profession
-- Profile photo or logo in `assets/`
-- Address and Google Maps link
-- WhatsApp link
-- Instagram profile
-- Phone number
-- Email address
-- LinkedIn profile
-- Save Contact / vCard link or functionality
+```text
+clients/
+  client-name/
+    index.html
+    style.css
+    assets/
+```
+
+This produces a dedicated GitHub Pages address such as:
+
+```text
+https://0xaaje.github.io/nfc-card/clients/client-name/
+```
 
 ## GitHub Pages
 
-1. Open the repository **Settings**.
-2. Select **Pages**.
-3. Choose **Deploy from a branch**.
-4. Select the `main` branch and the `/root` folder.
-5. Save. GitHub will provide the public page URL.
+In repository **Settings → Pages**, choose **Deploy from a branch**, then select the `main` branch and `/root` folder.
+
+## Asset credits
+
+- WhatsApp and chevron icons: Font Awesome Free 6.7.2 (CC BY 4.0 / MIT where applicable).
+- Google Maps product icon: Google brand asset.
