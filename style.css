@@ -52,6 +52,156 @@ a {
   text-align: center;
 }
 
+.directory-shell {
+  position: relative;
+  isolation: isolate;
+  width: min(100% - 32px, 620px);
+  min-height: min(720px, calc(100svh - 32px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(34px, 8vw, 72px);
+  overflow: hidden;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 36px;
+  background: var(--paper);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.16);
+}
+
+.directory-shell::before,
+.directory-shell::after {
+  position: absolute;
+  z-index: -1;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  content: "";
+  opacity: 0.18;
+  filter: blur(1px);
+}
+
+.directory-shell::before {
+  top: -92px;
+  right: -58px;
+  background: var(--cyan);
+}
+
+.directory-shell::after {
+  bottom: -112px;
+  left: -72px;
+  background: var(--magenta);
+}
+
+.directory-header {
+  text-align: center;
+}
+
+.directory-kicker {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.27em;
+}
+
+.directory-header h1 {
+  margin: 0;
+  font-size: clamp(2.35rem, 8vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.directory-intro {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.directory-header .cmyk-rule {
+  margin-top: 28px;
+}
+
+.client-list {
+  display: grid;
+  gap: 14px;
+  margin-top: clamp(38px, 8vw, 58px);
+}
+
+.client-link {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 16px;
+  min-height: 100px;
+  padding: 20px 22px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 14px 28px rgba(20, 20, 20, 0.09);
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.client-link:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  box-shadow: 0 20px 34px rgba(20, 20, 20, 0.13);
+}
+
+.client-link:focus-visible {
+  outline: 4px solid rgba(0, 174, 239, 0.34);
+  outline-offset: 5px;
+}
+
+.client-link__index {
+  color: var(--magenta);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.client-link__copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.client-link__copy strong {
+  font-size: clamp(1.45rem, 5vw, 2rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.client-link__copy small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.client-link__arrow {
+  color: var(--ink);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.directory-footer {
+  margin-top: auto;
+  padding-top: 42px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.directory-footer small {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 .brand-header {
   display: grid;
   justify-items: center;

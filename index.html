@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#f4f3ef" />
     <meta
       name="description"
-      content="INNOPRINT stationery and print — WhatsApp catalogue and Google Maps location."
+      content="A collection of NFC digital cards for client businesses."
     />
-    <title>INNOPRINT | Stationery &amp; Print</title>
+    <title>NFC Client Cards</title>
     <link
       rel="icon"
       type="image/svg+xml"
@@ -17,114 +17,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="digital-card" aria-labelledby="brand-name">
-      <header class="brand-header">
-        <div
-          class="brand-lockup"
-          role="img"
-          aria-label="INNOPRINT — Stationery and Print"
-        >
-          <img
-            src="assets/innoprint-reference.png"
-            alt=""
-            width="862"
-            height="1832"
-          />
-        </div>
-
-        <h1 id="brand-name" class="sr-only">INNOPRINT</h1>
+    <main class="directory-shell" aria-labelledby="directory-title">
+      <header class="directory-header">
+        <p class="directory-kicker">NFC DIGITAL CARDS</p>
+        <h1 id="directory-title">Client cards</h1>
+        <p class="directory-intro">Choose a card to open.</p>
         <div class="cmyk-rule" aria-hidden="true">
           <span></span><span></span><span></span>
         </div>
-        <p class="tagline">IDEAS PRINT A BRIGHTER<br />TOMORROW</p>
       </header>
 
-      <nav class="contact-actions" aria-label="INNOPRINT contact links">
-        <a
-          class="action action--whatsapp"
-          href="https://wa.me/212699063336"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Chat with INNOPRINT on WhatsApp at 0699-063336"
-        >
-          <span class="action__icon" aria-hidden="true">
-            <img src="assets/whatsapp.svg" alt="" />
+      <nav class="client-list" aria-label="Client cards">
+        <a class="client-link" href="clients/innoprint/">
+          <span class="client-link__index" aria-hidden="true">01</span>
+          <span class="client-link__copy">
+            <strong>INNOPRINT</strong>
+            <small>Stationery &amp; Print</small>
           </span>
-          <span class="action__divider" aria-hidden="true"></span>
-          <span class="action__copy">
-            <span class="action__eyebrow">CHAT &amp; ORDER ON</span>
-            <strong>WhatsApp</strong>
-            <span class="action__detail">0699-063336</span>
-          </span>
-          <img
-            class="action__arrow"
-            src="assets/chevron-right.svg"
-            alt=""
-            aria-hidden="true"
-          />
+          <span class="client-link__arrow" aria-hidden="true">&#8594;</span>
         </a>
-
-        <a
-          class="action action--maps"
-          href="https://www.google.com/maps/place/INNOPRINT+%D9%85%D9%83%D8%AA%D8%A8%D8%A9%E2%80%AD/@33.8864855,-5.5997735,17z/data=!4m8!3m7!1s0xda05b1cb52793a7:0xec7a665050fba31a!8m2!3d33.8864811!4d-5.5971932!9m1!1b1!16s%2Fg%2F11yqqz21hw?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View INNOPRINT on Google Maps"
-        >
-          <span class="action__icon" aria-hidden="true">
-            <img src="assets/google-maps.png" alt="" />
-          </span>
-          <span class="action__divider" aria-hidden="true"></span>
-          <span class="action__copy">
-            <span class="action__eyebrow">VIEW OUR</span>
-            <strong>Location</strong>
-            <span class="action__detail">ON GOOGLE MAPS</span>
-          </span>
-          <img
-            class="action__arrow"
-            src="assets/chevron-right.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </a>
-      <a
-        class="action action--instagram"
-        href="https://www.instagram.com/innoprints__?stkn=MTNsd2wyOThvazdjMQ=="
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Open the INNOPRINT Instagram profile"
-      >
-        <span class="action__icon" aria-hidden="true">
-          <img src="assets/instagram.svg" alt="" />
-        </span>
-        <span class="action__divider" aria-hidden="true"></span>
-        <span class="action__copy">
-          <span class="action__eyebrow">FOLLOW US ON</span>
-          <strong>Instagram</strong>
-          <span class="action__detail">@INNOPRINTS__</span>
-        </span>
-        <img
-          class="action__arrow"
-          src="assets/chevron-right.svg"
-          alt=""
-          aria-hidden="true"
-        />
-      </a>
-
       </nav>
 
-      <footer class="card-footer">
-        <img
-          class="nfc-symbol"
-          src="assets/contactless.svg"
-          alt=""
-          aria-hidden="true"
-        />
-        <p>NFC DIGITAL CARD</p>
-        <div class="cmyk-rule cmyk-rule--small" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-        <small>PRINTING PEOPLE CLOSER</small>
+      <footer class="directory-footer">
+        <small>Tap an NFC card to connect</small>
       </footer>
     </main>
   </body>
